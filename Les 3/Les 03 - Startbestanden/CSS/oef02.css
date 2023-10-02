@@ -1,0 +1,42 @@
+h1 {
+    margin: 0px;
+    padding: 0px;
+    font-size: 2em;
+    color: orange;
+}
+
+hr {
+    height: 1px;
+    background-color: darkblue;
+}
+
+img {
+    border-radius: 5%;
+    margin: 15px;
+}
+
+.fotoKlein {
+    opacity: 0.5;
+    float: left;
+}
+
+.fotoKlein:hover {
+    box-shadow: 5px 5px 0px orange;
+    opacity: 1;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    color: orange;
+}
+
+a:visited {
+    text-decoration: underline;
+}
+
+div {
+    padding: 15px;
+}

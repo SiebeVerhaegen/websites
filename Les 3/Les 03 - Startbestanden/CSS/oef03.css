@@ -1,0 +1,43 @@
+body {
+    color: darkblue;
+}
+
+.logo {
+    width: 200px;
+    margin: 20px;
+}
+
+h1 {
+    font-size: 2em;
+    color: orange;
+    margin: 0px;
+    padding: 0px;
+}
+
+h2 {
+    margin: 0px;
+    padding-top: 10px;
+    font-size: 1.5em;
+    color: darkblue;
+}
+
+p {
+    margin: 0px;
+    padding: 15px;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    color: orange;
+}
+
+a:visited {
+    text-decoration: underline;
+}
+
+div {
+    background-color: darkblue;
+}
