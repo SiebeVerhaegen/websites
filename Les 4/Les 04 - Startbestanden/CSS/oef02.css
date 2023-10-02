@@ -1,0 +1,27 @@
+table, th, td {
+    border-collapse: collapse;
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+}
+
+table {
+    text-align: center;
+}
+
+th {
+    color: white;
+}
+
+.kolom1 {
+    background-color: #1F1F33;
+    width: 75px;
+}
+
+.head {
+    background-color: #b86123;
+}
+
+tr {
+    height: 55px;
+}

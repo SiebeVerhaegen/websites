@@ -1,0 +1,50 @@
+img {
+    width: 150px;
+}
+
+h1 {
+    color: #df6813;
+}
+
+h1, h2 {
+    font-weight: bold;
+}
+
+table, th, td {
+    border-collapse: collapse;
+    border-style: solid;
+    border-width: 1px;
+    border-color: lightgray;
+}
+
+table {
+    text-align: center;
+}
+
+tr {
+    height: 50px;
+}
+
+th, td {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+th {
+    font-size: 24px;
+}
+
+.nadruk {
+    font-weight: bold;
+}
+
+caption {
+    caption-side: bottom;
+    padding: 10px;
+}
+
+.startdag {
+    color: white;
+    background-color: #df6813;
+    font-size: 32px;
+}

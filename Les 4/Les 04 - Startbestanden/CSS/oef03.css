@@ -1,0 +1,40 @@
+table, th, td {
+    border-collapse: collapse;
+    border-style: solid;
+    border-color: black;
+    border-width: 1px;
+}
+
+table {
+    border-width: 3px;
+    text-align: center;
+}
+
+tr {
+    height: 50px;
+}
+
+th {
+    background-color: lightgray;
+}
+
+.groen {
+    background-color: springgreen;
+}
+
+.rood {
+    background-color: crimson;
+}
+
+.col1 {
+    width: 200px;
+}
+
+.col2 {
+    width: 100px;
+}
+
+caption {
+    font-size: 1.6em;
+    margin-bottom: 10px;
+}
