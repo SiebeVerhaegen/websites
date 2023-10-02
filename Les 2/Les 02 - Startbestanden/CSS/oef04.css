@@ -1,0 +1,29 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.section {
+    width: 300px;
+    padding: 20px;
+    margin: 20px;
+    border-style: solid;
+    border-width: 3px;
+    border-color: #000000;
+    border-radius: 10px;
+}
+
+.sec1 {
+    background-color: #e6a2a2;
+    color: #600;
+}
+
+.sec2 {
+    background-color: #a2c4e6;
+    color: #004080;
+}
+
+.sec3 {
+    background-color: #a2e6c4;
+    color: #00663d;
+}
