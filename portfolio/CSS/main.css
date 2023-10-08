@@ -73,14 +73,14 @@ img {
 }
 
 .navbar a {
-    display: block;
+    display: flex;
     text-align: center;
     color: var(--color4);
     width: 100%;
     height: 100%;
     font-size: 2em;
-    line-height: 60px;
-    padding-top: 5px;
+    justify-content: center;
+    align-items: center;
 }
 
 .navbar a:hover {
@@ -99,7 +99,7 @@ img {
     border-right-color: var(--color4);
     border-right-width: 1px;
     float: left;
-    margin-top: 8px;
+    margin-top: 0.5%;
 }
 
 .sectionLeft {
@@ -132,11 +132,72 @@ img {
     width: 55%;
     height: 92%;
     overflow: hidden;
-    margin: 0px;
-    padding: 0px;
+    padding: 2%;
+    box-sizing: border-box;
     
 }
 
+.sectionRight h2 {
+    text-align: center;
+    font-size: 3em;
+    margin-bottom: 1%;
+}
+
+.sectionRight p {
+    font-size: 1.1em;
+    margin-bottom: 5%;
+}
+
 .buttonLink {
+    position: relative;
     float: left;
+    width: 49%;
+    height: 18%;
+    background-color: var(--color3);
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.buttonLink img {
+    width: 25%;
+    float: left;
+}
+
+.buttonLink a {
+    position: relative;
+    display: block;
+    width: 94%;
+    height: 81%;
+    font-size: 3em;
+    padding: 3%;
+    border-radius: 5px;
+    color: var(--color1);
+    font-family: var(--headling);
+    font-weight: bold;
+}
+
+.buttonLink .buttonText {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.buttonLink:hover {
+    background-color: var(--color2);
+    border-style: solid;
+    border-width: 2px;
+    border-color: var(--color4);
+}
+
+.buttonLink:hover a {
+    color: var(--color4);
+}
+
+.buttonCV, .buttonHobbys {
+    margin-right: 2%;
+}
+
+.buttonHobbys, .buttonContact {
+    margin-top: 2%;
 }
