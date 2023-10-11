@@ -40,7 +40,7 @@ h1 {
 
 h2 {
     font-size: 3em;
-    margin-bottom: 1%;
+    margin-bottom: 2%;
 }
 
 p {
@@ -58,10 +58,10 @@ a {
     height: 92%;
 }
 
-.navbar {
+nav {
     position: relative;
     width: 100%;
-    height: 8%;
+    height: 40%;
     background-color: var(--color2);
     padding: 0px;
     margin: 0px;
@@ -69,7 +69,7 @@ a {
     flex-direction: row;
 }
 
-.navbar a {
+nav a {
     display: flex;
     text-align: center;
     color: var(--color4);
@@ -81,7 +81,7 @@ a {
     flex: 1;
 }
 
-.navbar a:hover {
+nav a:hover {
     text-decoration: underline;
     font-size: 2.5em;
 }
@@ -193,54 +193,66 @@ a {
     margin-top: 2%;
 }
 
-.head {
+header > h1 {
     grid-area: head;
     background-color: var(--color3);
     display: flex;
     color: black;
     align-items: center;
     justify-content: center;
+    width: 100%;
+    height: 60%;
 }
 
-.wrapper-left {
+header {
+    grid-area: header;
     position: relative;
-    grid-area: aside;
+    height: 20%;
+    width: 100%;
+}
+
+main {
+    position: relative;
+    width: 100%;
+    height: 80%;
+    float: right;
+}
+
+.section1 {
+    position: relative;
+    grid-area: section1;
     background-color: var(--color2);
     padding: 2%;
+    box-sizing: border-box;
+    width: 40%;
+    height: 100%;
+    float: left;
 }
 
-.wrapper-right {
+.section2 {
     position: relative;
-    grid-area: main;
+    grid-area: section2;
     padding: 2%;
-}
-
-.wrapper-right img {
-    width: 50px;
-}
-
-.main-grid {
-    display: grid;
-    grid-template-areas:
-    'head head'
-    'aside main';
-    width: 100%;
-    height: 92%;
-    grid-template-columns: 40% 60%;
-    grid-template-rows: 12% 88%;
+    box-sizing: border-box;
+    width: 60%;
+    height: 100%;
+    overflow: hidden;
 }
 
 table {
     width: 90%;
+    height: 70%;
     margin-left: 5%;
 }
 
-.vaardigheden {
-    height: 52%;
+.section-vaardigheden {
+    width: 100%;
+    height: 70%;
 }
 
-.talen {
-    height: 22%;
+.section-talen {
+    width: 100%;
+    height: 30%;
 }
 
 .cg2 {
@@ -269,4 +281,24 @@ caption {
     caption-side: bottom;
     color: white;
     font-size: 0.85em;
+}
+
+.profielfoto {
+    width: 12%;
+    float: left;
+    margin-right: 5%;
+}
+
+.section-opleidingen > p {
+    line-height: 1.7em;
+}
+
+.opleidingen-datum {
+    font-style: italic;
+    color: var(--color3);
+}
+
+.opleidingen-titel {
+    font-weight: bold;
+    font-size: 1.3em;
 }
