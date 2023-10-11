@@ -4,124 +4,145 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Curriculum Vitae</title>
+    <link rel="stylesheet" href="../CSS/main.css">
 </head>
 <body>
-    <ul>
-        <li><a href="../index.htm">Home</a></li>
-        <li><a href="curriculum-vitae.html">CV</a></li>
-        <li><a href="ervaring.html">Ervaring</a></li>
-        <li><a href="hobbys.html">Hobby's</a></li>
-        <li><a href="contact.html">Contact</a></li>
-    </ul>
-    <h1>Curriculum Vitae</h1>
-    <h2>Vaardigheden</h2>
-    <table>
-        <tr>
-            <td>Java</td>
-            <td><div></div></td>
-            <td><div></div></td>
-            <td><div></div></td>
-            <td><div></div></td>
-            <td><div></div></td>
-        </tr>
-        <tr>
-            <td>C#</td>
-            <td><div></div></td>
-            <td><div></div></td>
-            <td><div></div></td>
-            <td><div></div></td>
-            <td><div></div></td>
-        </tr>
-        <tr>
-            <td>SQL</td>
-            <td><div></div></td>
-            <td><div></div></td>
-            <td><div></div></td>
-            <td><div></div></td>
-            <td><div></div></td>
-        </tr>
-        <tr>
-            <td>HTML/CSS</td>
-            <td><div></div></td>
-            <td><div></div></td>
-            <td><div></div></td>
-            <td><div></div></td>
-            <td><div></div></td>
-        </tr>
-        <tr>
-            <td>Python</td>
-            <td><div></div></td>
-            <td><div></div></td>
-            <td><div></div></td>
-            <td><div></div></td>
-            <td><div></div></td>
-        </tr>
-        <tr>
-            <td>Javascript</td>
-            <td><div></div></td>
-            <td><div></div></td>
-            <td><div></div></td>
-            <td><div></div></td>
-            <td><div></div></td>
-        </tr>
-        <tr>
-            <td>PHP</td>
-            <td><div></div></td>
-            <td><div></div></td>
-            <td><div></div></td>
-            <td><div></div></td>
-            <td><div></div></td>
-        </tr>
-        <caption>Kennis op eens chall van 1 tot 5.</caption>
-    </table>
-    <h2>Talen</h2>
-    <table>
-        <tr>
-            <td>Nederlands</td>
-            <td><div></div></td>
-            <td><div></div></td>
-            <td><div></div></td>
-            <td><div></div></td>
-            <td><div></div></td>
-        </tr>
-        <tr>
-            <td>Engels</td>
-            <td><div></div></td>
-            <td><div></div></td>
-            <td><div></div></td>
-            <td><div></div></td>
-            <td><div></div></td>
-        </tr>
-        <tr>
-            <td>Frans</td>
-            <td><div></div></td>
-            <td><div></div></td>
-            <td><div></div></td>
-            <td><div></div></td>
-            <td><div></div></td>
-        </tr>
-    </table>
-    <h2>Profiel</h2>
-    <p>
-        Mijn uitgebreide kennis rond object georiënteerd programmeren maakt mij de ideale werknemer voor de IT sector. 
-        Ik ben iemand die gestructureerd werkt en streeft voor het beste. 
-        Ik sta altijd open om nieuwe dingen te leren en toe te passen.
-    </p>
-    <img src="../afbeeldingen/afbeelding-cv-01.jpg" 
-    alt="Profielfoto van Siebe Verhaegen." 
-    title="Profielfoto van Siebe Verhaegen.">
-    <h2>Opleidingen</h2>
-    <p>September 2019 - Juni 2021</p>
-    <p>Secundair Onderwijs Toegepaste Informatica</p>
-    <p>
-        Sint Ursula, Lier<br>
-        Diploma behaald in 2021.
-    </p>
-    <p>September 2021 - Juni 2023</p>
-    <p>Bachelor Toegepaste Informatica</p>
-    <p>
-        Karel de Grote Hogeschool, Antwerpen<br>
-        Diploma niet behaald.
-    </p>
+    <nav class="navbar">
+        <a href="../index.htm">Home</a>
+        <div class="seperator"></div>
+        <a href="curriculum-vitae.html">CV</a>
+        <div class="seperator"></div>
+        <a href="ervaring.html">Ervaring</a>
+        <div class="seperator"></div>
+        <a href="hobbys.html">Hobby's</a>
+        <div class="seperator"></div>
+        <a href="contact.html">Contact</a>
+    </nav>
+    <div class="main-grid">
+        <div class="head">
+            <h1>Curriculum Vitae</h1>
+        </div>
+        <div class="wrapper-left">
+            <h2>Vaardigheden</h2>
+            <table class="vaardigheden">
+                <colgroup>
+                    <col class="cg1">
+                    <col class="cg2" span="5">
+                </colgroup>
+                <tr>
+                    <td>Java</td>
+                    <td><div class="scale-box box-filled"></div></td>
+                    <td><div class="scale-box box-filled"></div></td>
+                    <td><div class="scale-box box-filled"></div></td>
+                    <td><div class="scale-box box-filled"></div></td>
+                    <td><div class="scale-box box-filled"></div></td>
+                </tr>
+                <tr>
+                    <td>C#</td>
+                    <td><div class="scale-box box-filled"></div></td>
+                    <td><div class="scale-box box-filled"></div></td>
+                    <td><div class="scale-box box-filled"></div></td>
+                    <td><div class="scale-box box-filled"></div></td>
+                    <td><div class="scale-box box-empty"></div></td>
+                </tr>
+                <tr>
+                    <td>SQL</td>
+                    <td><div class="scale-box box-filled"></div></td>
+                    <td><div class="scale-box box-filled"></div></td>
+                    <td><div class="scale-box box-filled"></div></td>
+                    <td><div class="scale-box box-filled"></div></td>
+                    <td><div class="scale-box box-empty"></div></td>
+                </tr>
+                <tr>
+                    <td>HTML/CSS</td>
+                    <td><div class="scale-box box-filled"></div></td>
+                    <td><div class="scale-box box-filled"></div></td>
+                    <td><div class="scale-box box-filled"></div></td>
+                    <td><div class="scale-box box-empty"></div></td>
+                    <td><div class="scale-box box-empty"></div></td>
+                </tr>
+                <tr>
+                    <td>Python</td>
+                    <td><div class="scale-box box-filled"></div></td>
+                    <td><div class="scale-box box-filled"></div></td>
+                    <td><div class="scale-box box-empty"></div></td>
+                    <td><div class="scale-box box-empty"></div></td>
+                    <td><div class="scale-box box-empty"></div></td>
+                </tr>
+                <tr>
+                    <td>Javascript</td>
+                    <td><div class="scale-box box-filled"></div></td>
+                    <td><div class="scale-box box-empty"></div></td>
+                    <td><div class="scale-box box-empty"></div></td>
+                    <td><div class="scale-box box-empty"></div></td>
+                    <td><div class="scale-box box-empty"></div></td>
+                </tr>
+                <tr>
+                    <td>PHP</td>
+                    <td><div class="scale-box box-filled"></div></td>
+                    <td><div class="scale-box box-empty"></div></td>
+                    <td><div class="scale-box box-empty"></div></td>
+                    <td><div class="scale-box box-empty"></div></td>
+                    <td><div class="scale-box box-empty"></div></td>
+                </tr>
+                <caption>Kennis op eens chall van 1 tot 5.</caption>
+            </table>
+            <h2>Talen</h2>
+            <table class="talen">
+                <colgroup>
+                    <col class="cg1">
+                    <col class="cg2" span="5">
+                </colgroup>
+                <tr>
+                    <td>Nederlands</td>
+                    <td><div class="scale-box box-filled"></div></td>
+                    <td><div class="scale-box box-filled"></div></td>
+                    <td><div class="scale-box box-filled"></div></td>
+                    <td><div class="scale-box box-filled"></div></td>
+                    <td><div class="scale-box box-filled"></div></td>
+                </tr>
+                <tr>
+                    <td>Engels</td>
+                    <td><div class="scale-box box-filled"></div></td>
+                    <td><div class="scale-box box-filled"></div></td>
+                    <td><div class="scale-box box-filled"></div></td>
+                    <td><div class="scale-box box-filled"></div></td>
+                    <td><div class="scale-box box-filled"></div></td>
+                </tr>
+                <tr>
+                    <td>Frans</td>
+                    <td><div class="scale-box box-filled"></div></td>
+                    <td><div class="scale-box box-empty"></div></td>
+                    <td><div class="scale-box box-empty"></div></td>
+                    <td><div class="scale-box box-empty"></div></td>
+                    <td><div class="scale-box box-empty"></div></td>
+                </tr>
+            </table>
+        </div>
+        <div class="wrapper-right">
+            <h2>Profiel</h2>
+            <p>
+                Mijn uitgebreide kennis rond object georiënteerd programmeren maakt mij de ideale werknemer voor de IT sector. 
+                Ik ben iemand die gestructureerd werkt en streeft voor het beste. 
+                Ik sta altijd open om nieuwe dingen te leren en toe te passen.
+            </p>
+            <img src="../afbeeldingen/afbeelding-cv-01.jpg" 
+            alt="Profielfoto van Siebe Verhaegen." 
+            title="Profielfoto van Siebe Verhaegen.">
+            <h2>Opleidingen</h2>
+            <p>September 2019 - Juni 2021</p>
+            <p>Secundair Onderwijs Toegepaste Informatica</p>
+            <p>
+                Sint Ursula, Lier<br>
+                Diploma behaald in 2021.
+            </p>
+            <p>September 2021 - Juni 2023</p>
+            <p>Bachelor Toegepaste Informatica</p>
+            <p>
+                Karel de Grote Hogeschool, Antwerpen<br>
+                Diploma niet behaald.
+            </p>
+        </div>
+    </div>
 </body>
 </html>

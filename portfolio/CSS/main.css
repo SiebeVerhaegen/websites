@@ -34,12 +34,22 @@ h1, h2 {
     font-family: var(--headling);
 }
 
-a {
-    text-decoration: none;
+h1 {
+    font-size: 3.8em;
 }
 
-img {
-    width: 50px;
+h2 {
+    font-size: 3em;
+    margin-bottom: 1%;
+}
+
+p {
+    font-size: 1.1em;
+    margin-bottom: 5%;
+}
+
+a {
+    text-decoration: none;
 }
 
 .mainDiv {
@@ -55,21 +65,8 @@ img {
     background-color: var(--color2);
     padding: 0px;
     margin: 0px;
-}
-
-.navbar ul {
-    position: relative;
     display: flex;
     flex-direction: row;
-    width: 100%;
-    height: 100%;
-    list-style-type: none;
-}
-
-.navbar li {
-    position: relative;
-    height: 100%;
-    flex: 1;
 }
 
 .navbar a {
@@ -81,6 +78,7 @@ img {
     font-size: 2em;
     justify-content: center;
     align-items: center;
+    flex: 1;
 }
 
 .navbar a:hover {
@@ -139,13 +137,6 @@ img {
 
 .sectionRight h2 {
     text-align: center;
-    font-size: 3em;
-    margin-bottom: 1%;
-}
-
-.sectionRight p {
-    font-size: 1.1em;
-    margin-bottom: 5%;
 }
 
 .buttonLink {
@@ -200,4 +191,82 @@ img {
 
 .buttonHobbys, .buttonContact {
     margin-top: 2%;
+}
+
+.head {
+    grid-area: head;
+    background-color: var(--color3);
+    display: flex;
+    color: black;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrapper-left {
+    position: relative;
+    grid-area: aside;
+    background-color: var(--color2);
+    padding: 2%;
+}
+
+.wrapper-right {
+    position: relative;
+    grid-area: main;
+    padding: 2%;
+}
+
+.wrapper-right img {
+    width: 50px;
+}
+
+.main-grid {
+    display: grid;
+    grid-template-areas:
+    'head head'
+    'aside main';
+    width: 100%;
+    height: 92%;
+    grid-template-columns: 40% 60%;
+    grid-template-rows: 12% 88%;
+}
+
+table {
+    width: 90%;
+    margin-left: 5%;
+}
+
+.vaardigheden {
+    height: 52%;
+}
+
+.talen {
+    height: 22%;
+}
+
+.cg2 {
+    width: 15%;
+}
+
+.scale-box {
+    height: 70%;
+    width: 90%;
+    border-radius: 5px;
+}
+
+.box-filled {
+    background-color: black;
+}
+
+.box-empty {
+    background-color: white;
+    border-style: solid;
+    border-width: 2px;
+    border-color: black;
+    box-sizing: border-box;
+}
+
+caption {
+    caption-side: bottom;
+    color: white;
+    font-size: 0.85em;
 }
