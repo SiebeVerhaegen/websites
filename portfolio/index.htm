@@ -11,21 +11,22 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Akshar&display=swap" rel="stylesheet">
+    <script type="text/Javascript" src="js/main.js"></script>
 </head>
 <body>
-    <div class="navbar">
-        <ul>
-            <li><a href="index.htm">Home</a></li>
+    <header class="header-home">
+        <nav class="navbar">
+            <a href="../index.htm">Home</a>
             <div class="seperator"></div>
-            <li><a href="paginas/curriculum-vitae.html">CV</a></li>
+            <a href="curriculum-vitae.html">CV</a>
             <div class="seperator"></div>
-            <li><a href="paginas/ervaring.html">Ervaring</a></li>
+            <a href="ervaring.html">Ervaring</a>
             <div class="seperator"></div>
-            <li><a href="paginas/hobbys.html">Hobby's</a></li>
+            <a href="hobbys.html">Hobby's</a>
             <div class="seperator"></div>
-            <li><a href="paginas/contact.html">Contact</a></li>
-        </ul>
-    </div>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
     <div class="sectionLeft">
         <img src="afbeeldingen/afbeelding-home-01.jpg" 
         alt="foto van Siebe Verhaegen" 
@@ -48,26 +49,34 @@
             Vaak wordt ik nerveus tijdens het uitvoeren van een presentatie bijvoorbeeld.
         </p>
         <div class="buttonLink buttonCV">
-            <a href="paginas/curriculum-vitae.html">
-                <img src="afbeeldingen/icoon-cv.png" alt="cv knop incoontje">
+            <a href="paginas/curriculum-vitae.html" 
+            onmouseover="hoverCV()"
+            onmouseout="leaveCV()">
+                <img src="afbeeldingen/icoon-cv.png" alt="cv knop incoontje" id="imgCV">
                 <div class="buttonText">CV</div>
             </a>
         </div>
         <div class="buttonLink buttonErvaring">
-            <a href="paginas/ervaring.html">
-                <img src="afbeeldingen/icoon-ervaring.png" alt="ervaring knop icoontje">
+            <a href="paginas/ervaring.html" 
+            onmouseover="hoverErvaring()"
+            onmouseout="leaveErvaring()">
+                <img src="afbeeldingen/icoon-ervaring.png" alt="ervaring knop icoontje" id="imgErvaring">
                 <div class="buttonText">Ervaring</div>
             </a>
         </div>
         <div class="buttonLink buttonHobbys">
-            <a href="paginas/hobbys.html">
-                <img src="afbeeldingen/icoon-hobbys.png" alt="hobby's knop icoontje">
+            <a href="paginas/hobbys.html" 
+            onmouseover="hoverHobbys()"
+            onmouseout="leaveHobbys()">
+                <img src="afbeeldingen/icoon-hobbys.png" alt="hobby's knop icoontje" id="imgHobbys">
                 <div class="buttonText">Hobby's</div>
             </a>
         </div>
         <div class="buttonLink buttonContact">
-            <a href="paginas/contact.html">
-                <img src="afbeeldingen/icoon-contact.png" alt="contact knop icoontje">
+            <a href="paginas/contact.html" 
+            onmouseover="hoverContact()"
+            onmouseout="leaveContact()">
+                <img src="afbeeldingen/icoon-contact.png" alt="contact knop icoontje" id="imgContact">
                 <div class="buttonText">Contact</div>
             </a>
         </div>
