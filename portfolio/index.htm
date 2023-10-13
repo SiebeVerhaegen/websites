@@ -50,33 +50,37 @@
         </p>
         <div class="buttonLink buttonCV">
             <a href="paginas/curriculum-vitae.html" 
-            onmouseover="hoverCV()"
-            onmouseout="leaveCV()">
+            onmouseenter="buttonLinkAnimation('cv-animation')"
+            onmouseleave="stopAnimation('cv-animation')">
                 <img src="afbeeldingen/icoon-cv.png" alt="cv knop incoontje" id="imgCV">
+                <div id="cv-animation" class="button-link-animation" hidden></div>
                 <div class="buttonText">CV</div>
             </a>
         </div>
         <div class="buttonLink buttonErvaring">
             <a href="paginas/ervaring.html" 
-            onmouseover="hoverErvaring()"
-            onmouseout="leaveErvaring()">
+            onmouseenter="buttonLinkAnimation('ervaring-animation')"
+            onmouseleave="stopAnimation('ervaring-animation')">
                 <img src="afbeeldingen/icoon-ervaring.png" alt="ervaring knop icoontje" id="imgErvaring">
+                <div id="ervaring-animation" class="button-link-animation" hidden></div>
                 <div class="buttonText">Ervaring</div>
             </a>
         </div>
         <div class="buttonLink buttonHobbys">
             <a href="paginas/hobbys.html" 
-            onmouseover="hoverHobbys()"
-            onmouseout="leaveHobbys()">
+            onmouseenter="buttonLinkAnimation('hobbys-animation')"
+            onmouseleave="stopAnimation('hobbys-animation')">
                 <img src="afbeeldingen/icoon-hobbys.png" alt="hobby's knop icoontje" id="imgHobbys">
+                <div id="hobbys-animation" class="button-link-animation" hidden></div>
                 <div class="buttonText">Hobby's</div>
             </a>
         </div>
         <div class="buttonLink buttonContact">
             <a href="paginas/contact.html" 
-            onmouseover="hoverContact()"
-            onmouseout="leaveContact()">
+            onmouseenter="buttonLinkAnimation('contact-animation')"
+            onmouseleave="stopAnimation('contact-animation')">
                 <img src="afbeeldingen/icoon-contact.png" alt="contact knop icoontje" id="imgContact">
+                <div id="contact-animation" class="button-link-animation" hidden></div>
                 <div class="buttonText">Contact</div>
             </a>
         </div>
