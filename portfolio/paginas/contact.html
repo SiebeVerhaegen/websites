@@ -4,46 +4,73 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact</title>
+    <link rel="stylesheet" href="../CSS/main.css">
 </head>
 <body>
-    <ul>
-        <li><a href="../index.htm">Home</a></li>
-        <li><a href="curriculum-vitae.html">CV</a></li>
-        <li><a href="ervaring.html">Ervaring</a></li>
-        <li><a href="hobbys.html">Hobby's</a></li>
-        <li><a href="contact.html">Contact</a></li>
-    </ul>
-    <h1>Contact</h1>
-    <h2>Hier kan u me bereiken</h2>
-    <a href="r1002687@student.thomasmore.be">
-        <img src="../afbeeldingen/icoon-email.png" alt="e-mail icoontje">
-        <p>E-mail</p>
-        <p>siebe.verahegen</p>
-    </a>
-    <a href="facebook.com/siebe.verhaegen">
-        <img src="../afbeeldingen/icoon-facebook.png" alt="facebook icoontje">
-        <p>E-mail</p>
-        <p>facebook.com/siebe.verhaegen</p>
-    </a>
-    <a href="twitter.com/SiebeVerhaegen">
-        <img src="../afbeeldingen/icoon-twitter.png" alt="twitter icoontje">
-        <p>E-mail</p>
-        <p>twitter.com/SiebeVerhaegen</p>
-    </a>
-    <img src="../afbeeldingen/icoon-telefoonnummer.png" alt="telefoon icoontje">
-    <p>Telefoonnummer</p>
-    <p>0496 20 86 23</p>
-    <h2>Stuur mij een mail</h2>
-    <form action="#" method="post">
-        <label for="naam">Naam:</label>
-        <input type="text" name="naam" id="naam">
-        <label for="email">E-mailadres:</label>
-        <input type="text" name="email" id="email">
-        <label for="naam">Onderwerp:</label>
-        <input type="text" name="onderwerp" id="onderwerp">
-        <label for="e-mail">Inhoud:</label>
-        <textarea name="inhoud" id="inhoud" cols="30" rows="10"></textarea>
-        <input type="submit" value="Verstuur" name="verstuur" id="verstuur">
-    </form>
+    <header>
+        <nav class="navbar">
+            <a href="../index.htm">Home</a>
+            <div class="seperator"></div>
+            <a href="curriculum-vitae.html">CV</a>
+            <div class="seperator"></div>
+            <a href="ervaring.html">Ervaring</a>
+            <div class="seperator"></div>
+            <a href="hobbys.html">Hobby's</a>
+            <div class="seperator"></div>
+            <a href="contact.html">Contact</a>
+        </nav>
+        <h1>Contact</h1>
+    </header>
+    <main class="main-contact">
+        <section class="section">
+            <h2>Hier kan u me bereiken</h2>
+            <section>
+                <a href="mailto: r1002687@student.thomasmore.be">
+                    <img class="contact-icoon" src="../afbeeldingen/icoon-email.png" alt="e-mail icoontje">
+                    <p>E-mail</p>
+                    <p>siebe.verahegen</p>
+                </a>
+            </section>
+            <section>
+                <a href="https://www.facebook.com/siebe.verhaegen">
+                    <img class="contact-icoon" src="../afbeeldingen/icoon-facebook.png" alt="facebook icoontje">
+                    <p>E-mail</p>
+                    <p>facebook.com/siebe.verhaegen</p>
+                </a>
+            </section>
+            <section>
+                <a href="https://www.twitter.com/SiebeVerhaegen">
+                    <img class="contact-icoon" src="../afbeeldingen/icoon-twitter.png" alt="twitter icoontje">
+                    <p>E-mail</p>
+                    <p>twitter.com/SiebeVerhaegen</p>
+                </a>
+            </section>
+            <section>
+                <a href="https://www.discordapp.com/users/486548359079919636">
+                    <img class="contact-icoon" src="../afbeeldingen/icoon-discord.png" alt="discord icoontje">
+                    <p>Discord</p>
+                    <p>siebe_uwu</p>
+                </a>
+            </section>
+            <section>
+                <img class="contact-icoon" src="../afbeeldingen/icoon-telefoonnummer.png" alt="telefoon icoontje">
+                <p>Telefoonnummer</p>
+                <p>0496 20 86 23</p>
+            </section>
+        </section>
+        <form action="https://tm-statweb.be/sendmail.php" method="post">
+            <h2>Stuur mij een mail</h2>
+            <label for="naam">Naam:</label>
+            <input type="text" name="naam" id="naam">
+            <label for="email">E-mailadres:</label>
+            <input type="text" name="email" id="email">
+            <label for="naam">Onderwerp:</label>
+            <input type="text" name="onderwerp" id="onderwerp">
+            <label for="e-mail">Inhoud:</label>
+            <textarea name="inhoud" id="inhoud" cols="30" rows="10"></textarea>
+            <input type="hidden" name="studentemail" value="r1002687@student.thomasmore.be">
+            <input type="submit" value="Verstuur" name="verstuur" id="verstuur">
+        </form>
+    </main>
 </body>
 </html>

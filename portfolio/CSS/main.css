@@ -35,17 +35,17 @@ h1, h2 {
 }
 
 h1 {
-    font-size: 3.8em;
+    font-size: 3.9vw;
 }
 
 h2 {
-    font-size: 2.4em;
+    font-size: 2.5vw;
     margin-bottom: 2%;
     text-align: center;
 }
 
-p {
-    font-size: 1.05em;
+p, label {
+    font-size: 1.1vw;
 }
 
 a {
@@ -75,7 +75,7 @@ nav a {
     color: var(--color4);
     width: 100%;
     height: 100%;
-    font-size: 2em;
+    font-size: 2.1vw;
     justify-content: center;
     align-items: center;
     flex: 1;
@@ -83,7 +83,7 @@ nav a {
 
 nav a:hover {
     text-decoration: underline;
-    font-size: 2.5em;
+    font-size: 2.5vw;
 }
 
 .seperator {
@@ -133,7 +133,7 @@ nav a:hover {
     left: 0px;
     width: 100%;
     text-align: center;
-    font-size: 6em;
+    font-size: 6.1vw;
     color: black;
     text-shadow: -1.5px -1.5px 0 #5B9A8B, 1.5px -1.5px 0 #5B9A8B, -1.5px 1.5px 0 #5B9A8B, 1.5px 1.5px 0 #5B9A8B;
 }
@@ -197,7 +197,7 @@ nav a:hover {
     display: block;
     width: 94%;
     height: 81%;
-    font-size: 3em;
+    font-size: 3.1vw;
     padding: 3%;
     border-radius: 5px;
     color: var(--color1);
@@ -332,7 +332,7 @@ table {
 caption {
     caption-side: bottom;
     color: white;
-    font-size: 0.85em;
+    font-size: 0.9vw;
 }
 
 .profielfoto {
@@ -356,7 +356,7 @@ caption {
 
 .opleidingen-titel {
     font-weight: bold;
-    font-size: 1.2em;
+    font-size: 1.3vw;
 }
 
 .section-opleidingen-details {
@@ -435,6 +435,7 @@ caption {
     width: 100%;
     height: 53%;
     overflow: hidden;
+    background-color: var(--color2);
 }
 
 .aside-top-tien {
@@ -453,10 +454,47 @@ caption {
     padding-left: 22%;
     margin-right: 13%;
     margin-top: 10%;
-    font-size: 1.4em;
+    font-size: 1.5vw;
 }
 
 .aside-top-tien > ol > li {
     margin-top: 8%;
     text-align: center;
+}
+
+.main-contact > .section {
+    height: 100%;
+    width: 35%;
+    float: left;
+    background-color: var(--color2);
+}
+
+.main-contact > section > section {
+    width: 100%;
+    height: 12%;
+    margin-bottom: 4%;
+}
+
+.main-contact > section > section > a { 
+    color: var(--color4);
+}
+
+.main-contact > .section > h2 {
+    margin: 5% 0% 8% 0%;
+}
+
+.contact-icoon {
+    width: 10%;
+    float: left;
+    padding-right: 4%;
+    margin-top: -1%;
+    padding-left: 10%;
+}
+
+.main-contact > form {
+    position: relative;
+    width: 65%;
+    float: right;
+    padding: 2%;
+    box-sizing: border-box;
 }
