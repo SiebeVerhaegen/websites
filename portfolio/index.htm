@@ -16,74 +16,80 @@
 <body>
     <header class="header-home">
         <nav class="navbar">
-            <a href="../index.htm">Home</a>
+            <a href="index.htm">Home</a>
             <div class="seperator"></div>
-            <a href="curriculum-vitae.html">CV</a>
+            <a href="paginas/curriculum-vitae.html">CV</a>
             <div class="seperator"></div>
-            <a href="ervaring.html">Ervaring</a>
+            <a href="paginas/ervaring.html">Ervaring</a>
             <div class="seperator"></div>
-            <a href="hobbys.html">Hobby's</a>
+            <a href="paginas/hobbys.html">Hobby's</a>
             <div class="seperator"></div>
-            <a href="contact.html">Contact</a>
+            <a href="paginas/contact.html">Contact</a>
         </nav>
     </header>
-    <div class="sectionLeft">
+    <aside class="aside-home">
         <img src="afbeeldingen/afbeelding-home-01.jpg" 
         alt="foto van Siebe Verhaegen" 
         title="Foto van Siebe Verhaegen.">
         <h1>Siebe Verhaegen</h1>
-    </div>
-    <div class="sectionRight">
-        <h2>Over mij</h2>
-        <p>
-            Mijn naam is Siebe Verhaegen en ik ben een student van Thomas More. Ik volg de opleiding "programmeren" in Lier. 
-            Deze website dient een overzicht te geven over wie ik ben en waarom u mij als werknemer zou willen hebben. 
-            Momenteel zoek ik een job als applicatieontwikkelaar.
-        </p>
-        <h2>Mijn sterke en zwakke punten</h2>
-        <p>
-            Ik word beschouwd als iemand die logisch denkt. Daarnaast werk ik gestructureerd in verband met het programmeren. 
-            Ik doe altijd mijn uiterste best om mijn code zo overzichtelijk mogelijk te houden.
-            Waarin ik mezelf minder sterk in voel, draait rond het nemen van initiatief. 
-            Ik ben eerder iemand die volgt wat er van hem gevraagd wordt. Ten slotte heb ik moeilijkheden met het spreken voor een publiek. 
-            Vaak wordt ik nerveus tijdens het uitvoeren van een presentatie bijvoorbeeld.
-        </p>
-        <div class="buttonLink buttonCV">
-            <a href="paginas/curriculum-vitae.html" 
-            onmouseenter="buttonLinkAnimation('cv-animation')"
-            onmouseleave="stopAnimation('cv-animation')">
-                <img src="afbeeldingen/icoon-cv.png" alt="cv knop incoontje" id="imgCV">
-                <div id="cv-animation" class="button-link-animation" hidden></div>
-                <div class="buttonText">CV</div>
-            </a>
-        </div>
-        <div class="buttonLink buttonErvaring">
-            <a href="paginas/ervaring.html" 
-            onmouseenter="buttonLinkAnimation('ervaring-animation')"
-            onmouseleave="stopAnimation('ervaring-animation')">
-                <img src="afbeeldingen/icoon-ervaring.png" alt="ervaring knop icoontje" id="imgErvaring">
-                <div id="ervaring-animation" class="button-link-animation" hidden></div>
-                <div class="buttonText">Ervaring</div>
-            </a>
-        </div>
-        <div class="buttonLink buttonHobbys">
-            <a href="paginas/hobbys.html" 
-            onmouseenter="buttonLinkAnimation('hobbys-animation')"
-            onmouseleave="stopAnimation('hobbys-animation')">
-                <img src="afbeeldingen/icoon-hobbys.png" alt="hobby's knop icoontje" id="imgHobbys">
-                <div id="hobbys-animation" class="button-link-animation" hidden></div>
-                <div class="buttonText">Hobby's</div>
-            </a>
-        </div>
-        <div class="buttonLink buttonContact">
-            <a href="paginas/contact.html" 
-            onmouseenter="buttonLinkAnimation('contact-animation')"
-            onmouseleave="stopAnimation('contact-animation')">
-                <img src="afbeeldingen/icoon-contact.png" alt="contact knop icoontje" id="imgContact">
-                <div id="contact-animation" class="button-link-animation" hidden></div>
-                <div class="buttonText">Contact</div>
-            </a>
-        </div>
-    </div>
+    </aside>
+    <main class="main-home">
+        <section class="section1">
+            <h2>Over mij</h2>
+            <p>
+                Mijn naam is Siebe Verhaegen en ik ben een student van Thomas More. Ik volg de opleiding "programmeren" in Lier. 
+                Deze website dient een overzicht te geven over wie ik ben en waarom u mij als werknemer zou willen hebben. 
+                Momenteel zoek ik een job als applicatieontwikkelaar.
+            </p>
+        </section>
+        <section class="section2">
+            <h2>Mijn sterke en zwakke punten</h2>
+            <p>
+                Ik word beschouwd als iemand die logisch denkt. Daarnaast werk ik gestructureerd in verband met het programmeren. 
+                Ik doe altijd mijn uiterste best om mijn code zo overzichtelijk mogelijk te houden.
+                Waarin ik mezelf minder sterk in voel, draait rond het nemen van initiatief. 
+                Ik ben eerder iemand die volgt wat er van hem gevraagd wordt. Ten slotte heb ik moeilijkheden met het spreken voor een publiek. 
+                Vaak wordt ik nerveus tijdens het uitvoeren van een presentatie bijvoorbeeld.
+            </p>
+        </section>
+        <section class="section3">
+            <div class="buttonLink buttonCV">
+                <a href="paginas/curriculum-vitae.html" 
+                onmouseenter="buttonLinkAnimation('cv-animation')"
+                onmouseleave="stopAnimation('cv-animation')">
+                    <img src="afbeeldingen/icoon-cv.png" alt="cv knop incoontje" id="imgCV">
+                    <div id="cv-animation" class="button-link-animation" hidden></div>
+                    <div class="buttonText">CV</div>
+                </a>
+            </div>
+            <div class="buttonLink buttonErvaring">
+                <a href="paginas/ervaring.html" 
+                onmouseenter="buttonLinkAnimation('ervaring-animation')"
+                onmouseleave="stopAnimation('ervaring-animation')">
+                    <img src="afbeeldingen/icoon-ervaring.png" alt="ervaring knop icoontje" id="imgErvaring">
+                    <div id="ervaring-animation" class="button-link-animation" hidden></div>
+                    <div class="buttonText">Ervaring</div>
+                </a>
+            </div>
+            <div class="buttonLink buttonHobbys">
+                <a href="paginas/hobbys.html" 
+                onmouseenter="buttonLinkAnimation('hobbys-animation')"
+                onmouseleave="stopAnimation('hobbys-animation')">
+                    <img src="afbeeldingen/icoon-hobbys.png" alt="hobby's knop icoontje" id="imgHobbys">
+                    <div id="hobbys-animation" class="button-link-animation" hidden></div>
+                    <div class="buttonText">Hobby's</div>
+                </a>
+            </div>
+            <div class="buttonLink buttonContact">
+                <a href="paginas/contact.html" 
+                onmouseenter="buttonLinkAnimation('contact-animation')"
+                onmouseleave="stopAnimation('contact-animation')">
+                    <img src="afbeeldingen/icoon-contact.png" alt="contact knop icoontje" id="imgContact">
+                    <div id="contact-animation" class="button-link-animation" hidden></div>
+                    <div class="buttonText">Contact</div>
+                </a>
+            </div>
+        </section>
+    </main>
 </body>
 </html>

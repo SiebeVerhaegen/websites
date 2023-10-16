@@ -41,6 +41,7 @@ h1 {
 h2 {
     font-size: 2.4em;
     margin-bottom: 2%;
+    text-align: center;
 }
 
 p {
@@ -107,7 +108,12 @@ nav a:hover {
     height: 100%;
 }
 
-.sectionLeft {
+.main-home {
+    width: 55%;
+    height: 92%;
+}
+
+.aside-home {
     position: relative;
     width: 45%;
     height: 92%;
@@ -115,13 +121,13 @@ nav a:hover {
     float: left;
 }
 
-.sectionLeft img {
+.aside-home > img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
-.sectionLeft h1 {
+.aside-home > h1 {
     position: absolute;
     bottom: 30px;
     left: 0px;
@@ -132,7 +138,7 @@ nav a:hover {
     text-shadow: -1.5px -1.5px 0 #5B9A8B, 1.5px -1.5px 0 #5B9A8B, -1.5px 1.5px 0 #5B9A8B, 1.5px 1.5px 0 #5B9A8B;
 }
 
-.sectionRight {
+.main-home {
     position: relative;
     width: 55%;
     height: 92%;
@@ -142,7 +148,19 @@ nav a:hover {
     
 }
 
-.sectionRight h2 {
+.main-home > .section1 {
+    height: 27%;
+}
+
+.main-home > .section2 {
+    height: 33%;
+}
+
+.main-home > .section3 {
+    height: 40%;
+}
+
+.main-home > h2 {
     text-align: center;
 }
 
@@ -150,10 +168,10 @@ nav a:hover {
     position: relative;
     float: left;
     width: 49%;
-    height: 18%;
     background-color: var(--color3);
     border-radius: 5px;
     box-sizing: border-box;
+    height: 45%;
 }
 
 .buttonLink img {
@@ -243,7 +261,7 @@ section {
     box-sizing: border-box;
 }
 
-.section1 {
+.main-cv > .section1 {
     position: relative;
     grid-area: section1;
     background-color: var(--color2);
@@ -254,7 +272,7 @@ section {
     float: left;
 }
 
-.section2 {
+.main-cv > .section2 {
     position: relative;
     grid-area: section2;
     padding: 2%;
@@ -263,6 +281,15 @@ section {
     height: 100%;
     overflow: hidden;
 }
+
+.main-cv > .section2 > section {
+    margin-bottom: 8%;
+}
+
+.main-cv > .section2 > .section-profiel > h2 {
+    text-align: left;
+}
+
 
 table {
     width: 90%;
@@ -314,7 +341,11 @@ caption {
     margin-right: 5%;
 }
 
-.section-opleidingen > p {
+.section-opleidingen > section {
+    margin-top: 4%;
+}
+
+.section-opleidingen > section > p {
     line-height: 1.7em;
 }
 
@@ -325,7 +356,7 @@ caption {
 
 .opleidingen-titel {
     font-weight: bold;
-    font-size: 1.3em;
+    font-size: 1.2em;
 }
 
 .section-opleidingen-details {
@@ -367,47 +398,65 @@ caption {
 }
 
 .main-hobbys {
-    width: 80%;
+    width: 82%;
     float: left;
 }
 
-.main-hobbys > section > p {
+.main-hobbys > section > .wrapper {
+    box-sizing: border-box;
+    padding: 2%;
+}
+
+.main-hobbys > section > .wrapper > p {
     margin-bottom: 2%;
 }
 
 .section-hobbys {
     position: relative;
     width: 100%;
-    height: 50%;
+    height: 47%;
     overflow: hidden;
 }
 
 .section-hobbys > img {
     height: 100%;
     float: left;
-}
-
-.section-waarom {
-    position: relative;
-    width: 100%;
-    height: 50%;
-    overflow: hidden;
+    margin-right: 2%;
 }
 
 .section-waarom > img {
     height: 100%;
     float: right;
+    margin-left: 2%;
+}
+
+.section-waarom {
+    position: relative;
+    width: 100%;
+    height: 53%;
+    overflow: hidden;
 }
 
 .aside-top-tien {
     position: relative;
-    width: 20%;
-    height: 100%;
+    width: 18%;
+    height: 80%;
     box-sizing: border-box;
     float: right;
+    background-color: var(--color4);
+    color: var(--color1);
+    overflow: hidden;
+    padding-top: 1%;
 }
 
 .aside-top-tien > ol {
-    background-color: aqua;
-    padding-left: 30%;
+    padding-left: 22%;
+    margin-right: 13%;
+    margin-top: 10%;
+    font-size: 1.4em;
+}
+
+.aside-top-tien > ol > li {
+    margin-top: 8%;
+    text-align: center;
 }
