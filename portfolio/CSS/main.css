@@ -469,13 +469,13 @@ caption {
     background-color: var(--color2);
 }
 
-.main-contact > section > section {
+.main-contact > .section > div {
     width: 100%;
     height: 12%;
     margin-bottom: 4%;
 }
 
-.main-contact > section > section > a { 
+.main-contact > .section > div > a { 
     color: var(--color4);
 }
 
@@ -494,7 +494,67 @@ caption {
 .main-contact > form {
     position: relative;
     width: 65%;
+    height: 100%;
     float: right;
     padding: 2%;
     box-sizing: border-box;
+}
+
+.textbox {
+    width: 60%;
+    height: 6%;
+    font-size: 1.3vw;
+    box-sizing: border-box;
+    border-radius: 5px;
+    border-color: var(--color3);
+    border-style: solid;
+}
+
+label {
+    display: inline-block;
+    width: 13%;
+    margin-bottom: 3%;
+    padding-left: 6%;
+}
+
+.textarea-wrapper {
+    display: flex;
+    align-items:start;
+}
+
+.textarea {
+    width: 60%;
+    box-sizing: border-box;
+    font-size: 1.3vw;
+    margin-left: 0.5%;
+    border-radius: 5px;
+    border-color: var(--color3);
+    border-style: solid;
+}
+
+.submit {
+    width: 25%;
+    background-color: var(--color3);
+    border-radius: 5px;
+    box-sizing: border-box;
+    padding: 1%;
+    border-style: none;
+    font-size: 1.7vw;
+}
+
+.submit:hover {
+    background-color: var(--color2);
+    border-style: solid;
+    border-width: 2px;
+    border-color: var(--color4);
+    color: var(--color4);
+}
+
+.submit-wrapper {
+    display: flex;
+    width: 100%;
+    height: auto;
+    margin-top: 2%;
+    align-items: center;
+    justify-content: center;
 }
