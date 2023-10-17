@@ -11,6 +11,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Akshar&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="afbeeldingen/favicon.ico">
     <script type="text/Javascript" src="js/main.js"></script>
 </head>
 <body>
@@ -55,8 +56,8 @@
         <section class="section3">
             <div class="buttonLink buttonCV">
                 <a href="paginas/curriculum-vitae.html" 
-                onmouseenter="buttonLinkAnimation('cv-animation')"
-                onmouseleave="stopAnimation('cv-animation')">
+                onmouseenter="buttonLinkAnimation('cv-animation', 'imgCV')"
+                onmouseleave="stopAnimation('cv-animation', 'imgCV')">
                     <img src="afbeeldingen/icoon-cv.png" alt="cv knop incoontje" id="imgCV">
                     <div id="cv-animation" class="button-link-animation" hidden></div>
                     <div class="buttonText">CV</div>
@@ -64,8 +65,8 @@
             </div>
             <div class="buttonLink buttonErvaring">
                 <a href="paginas/ervaring.html" 
-                onmouseenter="buttonLinkAnimation('ervaring-animation')"
-                onmouseleave="stopAnimation('ervaring-animation')">
+                onmouseenter="buttonLinkAnimation('ervaring-animation', 'imgErvaring')"
+                onmouseleave="stopAnimation('ervaring-animation', 'imgErvaring')">
                     <img src="afbeeldingen/icoon-ervaring.png" alt="ervaring knop icoontje" id="imgErvaring">
                     <div id="ervaring-animation" class="button-link-animation" hidden></div>
                     <div class="buttonText">Ervaring</div>
@@ -73,8 +74,8 @@
             </div>
             <div class="buttonLink buttonHobbys">
                 <a href="paginas/hobbys.html" 
-                onmouseenter="buttonLinkAnimation('hobbys-animation')"
-                onmouseleave="stopAnimation('hobbys-animation')">
+                onmouseenter="buttonLinkAnimation('hobbys-animation', 'imgHobbys')"
+                onmouseleave="stopAnimation('hobbys-animation', 'imgHobbys')">
                     <img src="afbeeldingen/icoon-hobbys.png" alt="hobby's knop icoontje" id="imgHobbys">
                     <div id="hobbys-animation" class="button-link-animation" hidden></div>
                     <div class="buttonText">Hobby's</div>
@@ -82,8 +83,8 @@
             </div>
             <div class="buttonLink buttonContact">
                 <a href="paginas/contact.html" 
-                onmouseenter="buttonLinkAnimation('contact-animation')"
-                onmouseleave="stopAnimation('contact-animation')">
+                onmouseenter="buttonLinkAnimation('contact-animation', 'imgContact')"
+                onmouseleave="stopAnimation('contact-animation', 'imgContact')">
                     <img src="afbeeldingen/icoon-contact.png" alt="contact knop icoontje" id="imgContact">
                     <div id="contact-animation" class="button-link-animation" hidden></div>
                     <div class="buttonText">Contact</div>
