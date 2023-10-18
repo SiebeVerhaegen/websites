@@ -1,0 +1,42 @@
+.kompas {
+    position: relative;
+    width: 600px;
+    height: 600px;
+    background-image: url("../kompas.jpg");
+    background-size: cover;
+}
+
+.orientatie {
+    position: absolute;
+    font-family: 'Courgette', cursive;
+    color: white;
+    margin: 10px;
+}
+
+.noord {
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    text-align: center;
+}
+
+.oost {
+    display: flex;
+    right: 0px;
+    height: 100%;
+    align-items: center;
+}
+
+.zuid {
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    text-align: center;
+}
+
+.west {
+    display: flex;
+    left: 0px;
+    height: 100%;
+    align-items: center;
+}

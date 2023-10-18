@@ -1,0 +1,94 @@
+html, body {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    font-size: 1.4em;
+    padding: 0px;
+    margin: 0px;
+}
+
+.flex-box-horizontal {
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    width: 98%;
+    height: 30%;
+    align-items: center;
+    background-color: white;
+    justify-content: center;
+    padding: 10px;
+    gap: 20px;
+}
+
+.flex-item {
+    flex: 1;
+    height: 100%;
+    text-align: center;
+    padding: 30px;
+    box-sizing: border-box;
+}
+
+.header1 {
+    background-color: turquoise;
+}
+
+.header2 {
+    background-color: darkorchid;
+}
+
+.header3 {
+    background-color: limegreen;
+}
+
+.body1 {
+    position: relative;
+    background-color: yellow;
+    padding: 30px;
+}
+
+.body2 {
+    background-color: orangered;
+}
+
+.body3 {
+    background-color: rebeccapurple;
+}
+
+.body4 {
+    background-color:aquamarine;
+}
+
+.footer1 {
+    background-color: blue;
+}
+
+.footer2 {
+    background-color: orange;
+}
+
+.menu-list {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 60%;
+    padding: 0px;
+}
+
+.menu-list div {
+    flex: 1;
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+}
+
+.menu1 {
+    background-color: teal;
+}
+
+.menu2 {
+    background-color: green;
+}
+
+.menu3 {
+    background-color: purple;
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oefening 2</title>
+    <link rel="stylesheet" href="CSS/oef02.css">
+</head>
+<body>
+    <form action="https://tm-statweb.be/forms.php" method="post">
+        <div class="lbl">
+            <label for="voornaam">Voornaam:</label>
+        </div>
+        <div class="txt">
+            <input type="text" id="voornaam" name="voornaam" placeholder="Stijn">
+        </div>
+        <div class="lbl">
+            <label for="familienaam">Familienaam:</label>
+        </div>
+        <div class="txt">
+            <input type="text" id="familienaam" name="familienaam" placeholder="Lenaerts">
+        </div>
+        <div class="lbl">
+            <label for="gebruiksnaam">Gebruiksnaam:</label>
+        </div>
+        <div class="txt">
+            <input type="email" id="gebruiksnaam" name="gebruiksnaam" placeholder="mail@thomasmore.be">
+        </div>
+        <div class="lbl">
+            <label for="nickname">Nickname:</label>
+        </div>
+        <div class="txt">
+            <input type="text" id="nickname" name="nickname" minlength="5" maxlength="15" required>
+        </div>
+        <div class="lbl">
+            <label for="paswoord">Paswoord:</label>
+        </div>
+        <div class="txt">
+            <input type="password" id="paswoord" name="paswoord" required>
+        </div>
+        <div class="lbl">
+            <label for="herhaalPaswoord">Herhaal Paswoord:</label>
+        </div>
+        <div class="txt">
+            <input type="password" id="herhaalPaswoord" name="herhaalPaswoord" required>
+        </div>
+        <div class="sub">
+            <input type="submit" id="registreren" name="registreren" value="Registreren">
+        </div>
+    </form>
+</body>
+</html>

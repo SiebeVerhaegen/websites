@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oefening 4</title>
+    <link rel="stylesheet" href="CSS/oef04.css">
+</head>
+<body>
+    <form action="https://tm-statweb.be/forms.php" method="post">
+        <div class="lbl">
+            <label for="voornaam">Voornaam:</label> 
+        </div>
+        <div class="input">
+            <input type="text" name="voornaam" id="voornaam">
+        </div>
+        <div class="lbl">
+            <label for="familienaam">Familienaam:</label> 
+        </div>
+        <div class="input">
+            <input type="text" name="familienaam" id="familienaam">
+        </div>
+        <div class="lbl">
+            <label for="auto">Kies een auto:</label> 
+        </div>
+        <div class="input">
+            <select name="auto" id="auto">
+                <option></option>
+                <option value="ford">Ford</option>
+                <option value="peugeot">Peugeot</option>
+                <option value="volvo">Volvo</option>
+                <option value="skoda">Skoda</option>
+                <option value="saab">Saab</option>
+                <option value="mercedes">Mercedes</option>
+                <option value="audi">Audi</option>
+            </select>
+        </div>
+        <div class="input">
+            <input class="sub" type="submit" name="registreren" id="registreren" value="Registreren">
+        </div>
+    </form>
+</body>
+</html>

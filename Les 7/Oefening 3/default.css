@@ -1,0 +1,26 @@
+html, body {
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
+    height: 100%;
+}
+
+.column-left {
+    width: 30%;
+    padding: 15px;
+    box-sizing: border-box;
+    float: left;
+}
+
+.column-right {
+    width: 70%;
+    padding: 15px;
+    float: right;
+    box-sizing: border-box;
+}
+
+@media only screen and (max-width: 600px) {
+    .column-left, .column-right {
+        width: 100%;
+    }
+  }
