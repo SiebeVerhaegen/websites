@@ -1,0 +1,75 @@
+:root {
+    --color1: #252B48;
+    --color2: #445069;
+    --color3: #5B9A8B;
+    --color4: #F7E987;
+    --headling: 'Akshar', sans-serif;
+    --body: 'Manjari', sans-serif;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    background-color: var(--color1);
+    color: var(--color4);
+    font-family: var(--body);
+    height: 100%;
+}
+
+h1, h2 {
+    font-family: var(--headling);
+}
+
+h1 {
+    font-size: 3em;
+    padding: 1%;
+}
+
+h2 {
+    font-size: 2.5em;
+    text-align: center;
+}
+
+p, label {
+    font-size: 1em;
+}
+
+.navbar {
+    background-color: var(--color2) !important;
+    height: 8%;
+    padding: 0px;
+}
+
+.container-fluid {
+    background-color: var(--color2);
+}
+
+.nav-item {
+    font-size: 1.7em;
+}
+
+.nav-item > a {
+    color: var(--color4) !important;
+}
+
+.nav-item > .active {
+    text-decoration: underline;
+}
+
+.navbar-brand {
+    font-size: 1.8em;
+}
+
+.grid {
+    width: 95%;
+}
+
+.card-body {
+    background-color: var(--color3);
+}
+
+.card {
+    margin: 0px 50px 0px 50px;
+}
