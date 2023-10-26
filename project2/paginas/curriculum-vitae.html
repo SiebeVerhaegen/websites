@@ -4,159 +4,154 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Curriculum Vitae</title>
-    <link rel="stylesheet" href="../CSS/main.css">
     <link rel="icon" type="image/x-icon" href="../afbeeldingen/favicon.ico">
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../css/main.css" />
+    <script type="text/Javascript" src="../js/bootstrap.bundle.min.js"></script>
 </head>
 <body>
-    <header>
-        <nav class="navbar">
-            <a href="../index.htm">Home</a>
-            <div class="seperator"></div>
-            <a href="curriculum-vitae.html">CV</a>
-            <div class="seperator"></div>
-            <a href="ervaring.html">Ervaring</a>
-            <div class="seperator"></div>
-            <a href="hobbys.html">Hobby's</a>
-            <div class="seperator"></div>
-            <a href="contact.html">Contact</a>
+    <div class="main">
+        <nav class="navbar navbar-expand-lg bg-dark border-bottom border-body" data-bs-theme="dark">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">Navbar</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarColor01">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 nav-fill w-100"">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Home</a>
+                      </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">CV</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Ervaring</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Hobby's</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
         </nav>
         <h1>Curriculum Vitae</h1>
-    </header>
-    <main class="main-cv">
-        <section class="section1">
-            <section class="section-vaardigheden">
-                <h2>Vaardigheden</h2>
-                <table class="vaardigheden">
-                    <caption>Kennis op een schaal van 1 tot 5.</caption>
-                    <colgroup>
-                        <col class="cg1">
-                        <col class="cg2" span="5">
-                    </colgroup>
-                    <tr>
-                        <td>Java</td>
-                        <td><div class="scale-box box-filled"></div></td>
-                        <td><div class="scale-box box-filled"></div></td>
-                        <td><div class="scale-box box-filled"></div></td>
-                        <td><div class="scale-box box-filled"></div></td>
-                        <td><div class="scale-box box-filled"></div></td>
-                    </tr>
-                    <tr>
-                        <td>C#</td>
-                        <td><div class="scale-box box-filled"></div></td>
-                        <td><div class="scale-box box-filled"></div></td>
-                        <td><div class="scale-box box-filled"></div></td>
-                        <td><div class="scale-box box-filled"></div></td>
-                        <td><div class="scale-box box-empty"></div></td>
-                    </tr>
-                    <tr>
-                        <td>SQL</td>
-                        <td><div class="scale-box box-filled"></div></td>
-                        <td><div class="scale-box box-filled"></div></td>
-                        <td><div class="scale-box box-filled"></div></td>
-                        <td><div class="scale-box box-filled"></div></td>
-                        <td><div class="scale-box box-empty"></div></td>
-                    </tr>
-                    <tr>
-                        <td>HTML/CSS</td>
-                        <td><div class="scale-box box-filled"></div></td>
-                        <td><div class="scale-box box-filled"></div></td>
-                        <td><div class="scale-box box-filled"></div></td>
-                        <td><div class="scale-box box-empty"></div></td>
-                        <td><div class="scale-box box-empty"></div></td>
-                    </tr>
-                    <tr>
-                        <td>Python</td>
-                        <td><div class="scale-box box-filled"></div></td>
-                        <td><div class="scale-box box-filled"></div></td>
-                        <td><div class="scale-box box-empty"></div></td>
-                        <td><div class="scale-box box-empty"></div></td>
-                        <td><div class="scale-box box-empty"></div></td>
-                    </tr>
-                    <tr>
-                        <td>Javascript</td>
-                        <td><div class="scale-box box-filled"></div></td>
-                        <td><div class="scale-box box-empty"></div></td>
-                        <td><div class="scale-box box-empty"></div></td>
-                        <td><div class="scale-box box-empty"></div></td>
-                        <td><div class="scale-box box-empty"></div></td>
-                    </tr>
-                    <tr>
-                        <td>PHP</td>
-                        <td><div class="scale-box box-filled"></div></td>
-                        <td><div class="scale-box box-empty"></div></td>
-                        <td><div class="scale-box box-empty"></div></td>
-                        <td><div class="scale-box box-empty"></div></td>
-                        <td><div class="scale-box box-empty"></div></td>
-                    </tr>
-                </table>
-            </section>
-            <section class="section-talen">
-                <h2>Talen</h2>
-                <table class="talen">
-                    <colgroup>
-                        <col class="cg1">
-                        <col class="cg2" span="5">
-                    </colgroup>
-                    <tr>
-                        <td>Nederlands</td>
-                        <td><div class="scale-box box-filled"></div></td>
-                        <td><div class="scale-box box-filled"></div></td>
-                        <td><div class="scale-box box-filled"></div></td>
-                        <td><div class="scale-box box-filled"></div></td>
-                        <td><div class="scale-box box-filled"></div></td>
-                    </tr>
-                    <tr>
-                        <td>Engels</td>
-                        <td><div class="scale-box box-filled"></div></td>
-                        <td><div class="scale-box box-filled"></div></td>
-                        <td><div class="scale-box box-filled"></div></td>
-                        <td><div class="scale-box box-filled"></div></td>
-                        <td><div class="scale-box box-filled"></div></td>
-                    </tr>
-                    <tr>
-                        <td>Frans</td>
-                        <td><div class="scale-box box-filled"></div></td>
-                        <td><div class="scale-box box-empty"></div></td>
-                        <td><div class="scale-box box-empty"></div></td>
-                        <td><div class="scale-box box-empty"></div></td>
-                        <td><div class="scale-box box-empty"></div></td>
-                    </tr>
-                </table>
-            </section>
-        </section>
-        <section class="section2">
-            <section class="section-profiel">
-                <img class="profielfoto"
-                src="../afbeeldingen/afbeelding-cv-01.jpg" 
-                alt="Profielfoto van Siebe Verhaegen." 
-                title="Profielfoto van Siebe Verhaegen.">
-                <h2>Profiel</h2>
-                <p>
-                    Mijn uitgebreide kennis rond object georiënteerd programmeren maakt mij de ideale werknemer voor de IT sector. 
-                    Ik ben iemand die gestructureerd werkt en streeft voor het beste. 
-                    Ik sta altijd open om nieuwe dingen te leren en toe te passen.
-                </p>
-            </section>
-            <section class="section-opleidingen">
-                <h2>Opleidingen</h2>
-                <section class="section1">
+        <div class="grid-container container-fluid">
+            <div class="row">
+                <div class="col-sm col-sm-5">
+                    <div class="accordion accordion-flush" id="accordionExample">
+                        <div class="accordion-item">
+                          <h2 class="accordion-header">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                              Nederlands
+                            </button>
+                          </h2>
+                          <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                              <div class="scale">
+                                <div class="scale-box-filled"></div>
+                                <div class="scale-box-filled"></div>
+                                <div class="scale-box-filled"></div>
+                                <div class="scale-box-filled"></div>
+                                <div class="scale-box-filled"></div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion-item">
+                          <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                              Engels
+                            </button>
+                          </h2>
+                          <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <div class="scale">
+                                    <div class="scale-box-filled"></div>
+                                    <div class="scale-box-filled"></div>
+                                    <div class="scale-box-filled"></div>
+                                    <div class="scale-box-filled"></div>
+                                    <div class="scale-box-filled"></div>
+                                  </div>                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion-item">
+                          <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                              Frans
+                            </button>
+                          </h2>
+                          <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <div class="scale">
+                                    <div class="scale-box-filled"></div>
+                                    <div class="scale-box-empty"></div>
+                                    <div class="scale-box-empty"></div>
+                                    <div class="scale-box-empty"></div>
+                                    <div class="scale-box-empty"></div>
+                                  </div>                            
+                                </div>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-sm profiel">
+                    <div class="profielfoto-wrapper">
+                      <img src="../afbeeldingen/afbeelding-cv-01.jpg" alt="profielfoto van Siebe Verhaegen" title="Profielfoto van Siebe Verhaegen." class="img-fluid">
+                    </div>
                     <p>
-                        <span class="opleidingen-datum">September 2019 - Juni 2021</span>
-                        <br><span class="opleidingen-titel">Secundair Onderwijs Toegepaste Informatica</span>
-                        <br>Sint Ursula, Lier
-                        <br>Diploma behaald in 2021.
+                      Mijn uitgebreide kennis rond object georiënteerd programmeren maakt mij de ideale werknemer voor de IT sector. 
+                      Ik ben iemand die gestructureerd werkt en streeft voor het beste. 
+                      Ik sta altijd open om nieuwe IT-gerelateerde dingen te leren. Daarom zal ik altijd klaar staan voor het gebruiken van nieuwe programmeertalen en patronen.
+                      Uitdagingen zorgen ervoor dat ik evolueer en neiuwe skills meester.
                     </p>
-                </section>
-                <section class="section2">
-                    <p>
-                        <span class="opleidingen-datum">September 2021 - Juni 2023</span>
-                        <br><span class="opleidingen-titel">Bachelor Toegepaste Informatica</span>
-                        <br>Karel de Grote Hogeschool, Antwerpen
-                        <br>Diploma niet behaald.
-                    </p>
-                </section>
-            </section>
-        </section>
-    </main>
+                </div>
+            </div>
+            <div class="row">
+              <div class="col-sm col-sm-5"></div>
+              <div class="col-sm">
+                <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link pill active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Home</button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link pill" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Profile</button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link pill" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Contact</button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link pill" id="pills-disabled-tab" data-bs-toggle="pill" data-bs-target="#pills-disabled" type="button" role="tab" aria-controls="pills-disabled" aria-selected="false" disabled>Disabled</button>
+                  </li>
+                </ul>
+                <div class="tab-content" id="pills-tabContent">
+                  <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">...</div>
+                  <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">...</div>
+                  <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab" tabindex="0">...</div>
+                  <div class="tab-pane fade" id="pills-disabled" role="tabpanel" aria-labelledby="pills-disabled-tab" tabindex="0">...</div>
+                </div>
+              </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-container">
+      <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+        <div class="col-md-4 d-flex align-items-center">
+          <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+            <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"></use></svg>
+          </a>
+          <span class="mb-3 mb-md-0 text-muted">© 2022 Company, Inc</span>
+        </div>
+    
+        <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+          <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"></use></svg></a></li>
+          <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"></use></svg></a></li>
+          <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"></use></svg></a></li>
+        </ul>
+      </footer>
+    </div>
 </body>
 </html>
