@@ -18,13 +18,25 @@ body {
     height: 100%;
 }
 
+div {
+    margin: 0%;
+    padding: 0%;
+}
+
+.main {
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
 h1, h2 {
     font-family: var(--headling);
 }
 
 h1 {
     font-size: 2.8em;
-    padding: 1%;
+    padding: 0.5%;
+    margin: 0%;
     text-align: center;
 }
 
@@ -177,20 +189,159 @@ p, label {
 }
 
 .profielfoto-wrapper {
-    width: 17%;
+    width: 17.3%;
     position: relative;
     margin-right: 1.5%;
     float: left;
 }
 
+.pills-wrapper {
+    padding: 30px 30px 30px 0px;
+}
+
+.ps-sm-1 {
+    padding-left: 30px !important;
+}
+
 .pill {
     text-decoration: none !important;
+    font-size: 0.7em;
+    margin-right: 20px;
+    border-style: solid;
+    border-color: var(--color3);
+    border-width: 2px;
+}
+
+.pill:not(.active) {
+    background-color: var(--color3) !important;
+    color: black !important;
 }
 
 .nav-pills > li:hover {
     text-decoration: none !important;
 }
 
-.footer-container {
+.pill:hover {
+    background-color: var(--color1) !important;
+    color: var(--color3) !important;
+}
+
+.nav-pills {
+    --bs-nav-pills-link-active-bg: var(--color1) !important;
+    --bs-nav-pills-link-active-color: var(--color3) !important;
+}
+
+
+.grid-opleiding {
+    position: relative;
+    display: grid;
+    height: 250px;
+    width: auto;
+    grid-template-columns: 57% 40%;
+    grid-template-rows: 25% 15% 15% 15%;
+    row-gap: 10%;
+    column-gap: 3%;
+}
+
+.grid-opleiding > div {
+    display: flex;
+    align-items: center;
+    font-size: 1.2em;
+}
+
+.item-foto {
+    position: relative;
+    grid-column-start: 2;
+    grid-row-start: 2;
+    grid-row-end: span 3;
+    overflow: hidden;
+    border-radius: 5px;
+    align-items: start !important;
+}
+
+.item-opleiding {
+    color: white;
+    background-color: var(--color2);
+    font-size: 1.2em;
+    font-weight: bold;
+    justify-content: center;
+    border-radius: 5px;
+}
+
+.item-datum {
+    color: white;
+    background-color: var(--color2);
+    font-style: italic;
+    justify-content: center;
+    border-radius: 5px;
+}
+
+.img-school {
+    width: 100%;
+}
+
+.btn-info {
     background-color: var(--color4);
+    border-color: var(--color4);
+    --bs-btn-hover-bg: var(--color1);
+    --bs-btn-hover-border-color: var(--color4);
+    --bs-btn-hover-color: var(--color4);
+    font-size: 1.2em;
+}
+
+.splide {
+    width: 100%;
+}
+
+.splide__list > li  {
+    display: flex;
+    justify-content: center;
+}
+
+.slide-item {
+    width: 94%;
+}
+
+.carousel-image {
+    width: 100%;
+    background-color: var(--color2);
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.footer {
+    background-color: var(--color4) !important;
+    color: black;
+}
+
+.col-sm {
+    position: relative !important;
+}
+
+.col-carousel {
+    padding: 10px;
+}
+
+.splide__arrow {
+    top: 40% !important;
+}
+
+.scale-wrapper {
+    position: relative;
+    width: 100%;
+    height: 40px;
+    margin-top: 10px;
+}
+
+.scale-wrapper > .scale {
+    height: 30px;
+    background-color: var(--color2);
+    border-radius: 5px;
+}
+
+.splide__pagination--ltr {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
 }
