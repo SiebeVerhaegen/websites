@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="../css/bootstrap.min.css" />
     <link rel="stylesheet" href="../css/main.css" />
     <script type="text/Javascript" src="../js/bootstrap.bundle.min.js"></script>
+    <script type="text/Javascript" src="../js/main.js"></script>
 </head>
 <body>
     <div class="main min-vh-100">
@@ -84,29 +85,29 @@
                     <div class="container-fluid container-hobbys container-hobbys-3">
                         <h2>Mijn top 10 bordspellen</h2>
                         <ol>
-                            <li>Everdell</li>
-                            <li>BattleCON</li>
-                            <li>Root</li>
-                            <li>Frosthaven</li>
-                            <li>King of Tokyo</li>
-                            <li>Camel Up</li>
-                            <li>Aquatica</li>
-                            <li>CATAN</li>
-                            <li>Potion Explosion</li>
-                            <li>7 Wonders Duel</li>
+                            <li class="li-active" id="li-1">Everdell</li>
+                            <li class="" id="li-2">BattleCON</li>
+                            <li class="" id="li-3">Root</li>
+                            <li class="" id="li-4">Frosthaven</li>
+                            <li class="" id="li-5">King of Tokyo</li>
+                            <li class="" id="li-6">Camel Up</li>
+                            <li class="" id="li-7">Aquatica</li>
+                            <li class="" id="li-8">CATAN</li>
+                            <li class="" id="li-9">Potion Explosion</li>
+                            <li class="" id="li-10">7 Wonders Duel</li>
                         </ol>
                         <div id="carouselExampleFade" class="carousel slide carousel-fade">
                             <div class="carousel-indicators">
-                                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
-                                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
-                                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="5" aria-label="Slide 6"></button>
-                                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="6" aria-label="Slide 7"></button>
-                                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="7" aria-label="Slide 8"></button>
-                                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="8" aria-label="Slide 9"></button>
-                                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="9" aria-label="Slide 10"></button>
+                                <button type="button" data-bs-target="#carouselExampleFade" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1" onclick="markUsingIndicator(0)"></button>
+                                <button type="button" data-bs-target="#carouselExampleFade" data-bs-slide-to="1" aria-label="Slide 2" onclick="markUsingIndicator(1)"></button>
+                                <button type="button" data-bs-target="#carouselExampleFade" data-bs-slide-to="2" aria-label="Slide 3" onclick="markUsingIndicator(2)"></button>
+                                <button type="button" data-bs-target="#carouselExampleFade" data-bs-slide-to="3" aria-label="Slide 4" onclick="markUsingIndicator(3)"></button>
+                                <button type="button" data-bs-target="#carouselExampleFade" data-bs-slide-to="4" aria-label="Slide 5" onclick="markUsingIndicator(4)"></button>
+                                <button type="button" data-bs-target="#carouselExampleFade" data-bs-slide-to="5" aria-label="Slide 6" onclick="markUsingIndicator(5)"></button>
+                                <button type="button" data-bs-target="#carouselExampleFade" data-bs-slide-to="6" aria-label="Slide 7" onclick="markUsingIndicator(6)"></button>
+                                <button type="button" data-bs-target="#carouselExampleFade" data-bs-slide-to="7" aria-label="Slide 8" onclick="markUsingIndicator(7)"></button>
+                                <button type="button" data-bs-target="#carouselExampleFade" data-bs-slide-to="8" aria-label="Slide 9" onclick="markUsingIndicator(8)"></button>
+                                <button type="button" data-bs-target="#carouselExampleFade" data-bs-slide-to="9" aria-label="Slide 10" onclick="markUsingIndicator(9)"></button>
                               </div>
                             <div class="carousel-inner">
                               <div class="carousel-item active">
@@ -236,11 +237,11 @@
                                   </div>
                               </div>
                             </div>
-                            <button class="carousel-control carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+                            <button class="carousel-control carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev" id="btn-previous" onclick="goPrevious(this.id)">
                               <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                               <span class="visually-hidden">Previous</span>
                             </button>
-                            <button class="carousel-control carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+                            <button class="carousel-control carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next" id="btn-next" onclick="goNext(this.id)">
                               <span class="carousel-control-next-icon" aria-hidden="true"></span>
                               <span class="visually-hidden">Next</span>
                             </button>

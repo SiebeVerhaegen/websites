@@ -68,7 +68,6 @@ p, label {
     font-size: 1.8em;
 }
 
-
 .card-body {
     background-color: var(--color3);
 }
@@ -92,6 +91,10 @@ p, label {
     background-color: var(--color1);
     border-color: var(--color4);
     color: var(--color4);
+}
+
+.p-sm-1 {
+    padding: 20px; 
 }
 
 .d-grid {
@@ -374,6 +377,7 @@ p, label {
 
 .container-hobbys-3 {
     background-color: var(--color3);
+    color: black;
 }
 
 .carousel-caption {
@@ -394,7 +398,7 @@ p, label {
 
 
 .carousel-control {
-    bottom: 140px;
+    bottom: 300px;
 }
 
 ol > li {
@@ -403,4 +407,8 @@ ol > li {
 
 ol {
     padding: 0px 80px 0px 100px;
+}
+
+.li-active {
+    color: var(--color4);
 }
