@@ -24,9 +24,9 @@ h1, h2 {
 
 h1 {
     font-size: 2.8em;
-    padding: 0.5%;
     margin: 0%;
     text-align: center;
+    padding: 10px;
 }
 
 h2 {
@@ -68,6 +68,11 @@ p, label {
     font-size: 1.8em;
 }
 
+.col-card {
+    padding-left: 40px !important;
+    padding-right: 40px !important;
+}
+
 .card-body {
     background-color: var(--color3);
 }
@@ -91,6 +96,12 @@ p, label {
     background-color: var(--color1);
     border-color: var(--color4);
     color: var(--color4);
+}
+
+.btn-primary:active  {
+    background-color: var(--color1) !important;
+    border-color: var(--color3) !important;
+    color: var(--color4) !important;
 }
 
 .p-sm-1 {
@@ -260,6 +271,7 @@ p, label {
     font-weight: bold;
     justify-content: center;
     border-radius: 5px;
+    padding-left: 10px;
 }
 
 .item-datum {
@@ -268,6 +280,7 @@ p, label {
     font-style: italic;
     justify-content: center;
     border-radius: 5px;
+    padding-left: 10px;
 }
 
 .img-school {
@@ -281,6 +294,12 @@ p, label {
     --bs-btn-hover-border-color: var(--color4);
     --bs-btn-hover-color: var(--color4);
     font-size: 1.2em;
+}
+
+.btn-info:active  {
+    background-color: var(--color1) !important;
+    border-color: var(--color3) !important;
+    color: var(--color4) !important;
 }
 
 .splide {
@@ -369,10 +388,22 @@ p, label {
     background-color: var(--color1);
 }
 
-.container-hobbys-2 > img {
-    width: 38%;
+.img-wrapper {
+    position: relative;
     float: left;
+    width: 30% !important;
+    width: auto;
     margin-right: 15px;
+}
+
+@media only screen and (min-width: 768px) {
+    .img-wrapper {
+        height: 300px;
+    }
+}
+
+.img-wrapper > img {
+    width: 100%;
 }
 
 .container-hobbys-3 {
@@ -411,4 +442,102 @@ ol {
 
 .li-active {
     color: var(--color4);
+}
+
+.contact-icoon {
+    width: 55px;
+    float: left;
+    margin-right: 20px;
+}
+
+.col-contact {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--color3);
+    padding: 20px;
+}
+
+.contact-link {
+    text-decoration: none;
+    color: black;
+    line-height: 20px;
+}
+
+.contact-link:hover {
+    color: var(--color4);
+    text-decoration: underline;
+}
+
+.col-contact > div {
+    margin: 10px 0px 10px 0px;
+}
+
+.col-contact > h2 {
+    color: black;
+}
+
+.telefoonnummer {
+    color: black;
+    line-height: 20px;
+}
+
+.col-form {
+    padding: 20px 40px 20px 40px;
+}
+
+.form-check {
+    margin: 10px 0px 10px 0px;
+}
+
+.col-checklist {
+    background-color: var(--color2);
+}
+
+.checklist {
+    padding-left: 50px;
+}
+
+h3 {
+    text-align: center;
+    margin: 20px;
+}
+
+.submit {
+    padding-left: 40px;
+}
+
+.img-ervaring {
+    width: 100%;
+}
+
+.col-opleidingen {
+    background-color: var(--color2);
+}
+
+.col-ervaring {
+    padding: 20px;
+}
+
+.col-ervaring > h2 {
+    margin-bottom: 20px;
+}
+
+.form-check-input:checked {
+    background-color: var(--color1) !important;
+}
+
+.form-check-input:focus {
+    border-color: var(--color4) !important;
+}
+
+.form-check-input:checked {
+    border-color: var(--color4) !important;
+}
+
+.form-check-input:focus, .form-control:focus {
+    box-shadow: none !important;
+}
+
+.form-control {
+    border: none !important;
 }

@@ -3,68 +3,110 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ervaring</title>
-    <link rel="stylesheet" href="../CSS/main.css">
+    <title>Hobby's</title>
     <link rel="icon" type="image/x-icon" href="../afbeeldingen/favicon.ico">
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../css/main.css" />
+    <script type="text/Javascript" src="../js/bootstrap.bundle.min.js"></script>
+    <script type="text/Javascript" src="../js/main.js"></script>
 </head>
 <body>
-    <header>
-        <nav class="navbar">
-            <a href="../index.htm">Home</a>
-            <div class="seperator"></div>
-            <a href="curriculum-vitae.html">CV</a>
-            <div class="seperator"></div>
-            <a href="ervaring.html">Ervaring</a>
-            <div class="seperator"></div>
-            <a href="hobbys.html">Hobby's</a>
-            <div class="seperator"></div>
-            <a href="contact.html">Contact</a>
+    <div class="main min-vh-100">
+        <nav class="navbar navbar-expand-lg bg-dark border-bottom border-body" data-bs-theme="dark">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="../index.html">Siebe</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarColor01">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 nav-fill w-100"">
+                  <li class="nav-item">
+                    <a class="nav-link" href="../index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link"href="curriculum-vitae.html">CV</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="ervaring.html">Ervaring</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="hobbys.html">Hobby's</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link"  href="contact.html">Contact</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
         </nav>
         <h1>Ervaring</h1>
-    </header>
-    <main>
-        <section class="section-opleidingen-details">
-            <img src="../afbeeldingen/afbeelding-ervaring-02.jpg" 
-            alt="Afbeelding van een scherm met GitHub erop." 
-            title="Afbeelding van een scherm met GitHub erop.">
-            <h2>Opleidingen</h2>
-            <p>
-                Ik ben mijn IT-kennis beginnen te ontwikkelen tijdens mijn opleiding binnen het secundair onderwijs. 
-                Daar volgde ik de richting "Toegepaste Informatica" voor twee jaar tot ik mijn diploma kreeg. 
-                Deze richting werd gegeven door de Sint Ursula in Lier.
-            </p>
-            <p>
-                Vervolgens heb ik twee jaar lang de opleiding "Toegepaste Informatica" gevolgd in de hogeschool. 
-                In Karel de Grote Hogeschool trachtte ik een bachelor te behalen binnen de opleiding applicatieontwikkeling. 
-                Het eerste jaar was ik geslaagd voor een helft van de vakken. Namelijk, programmeren, hardware, operating systems en databanken. 
-                Het tweede jaar studeerde ik voor de andere vakken waarvoor ik niet geslaagd was. 
-                Uiteindelijk waren mijn studiepunten onvoldoende en heb ik mijn diploma niet behaald.
-            </p>
-        </section>
-        <section class="section-prestaties">
-            <img src="../afbeeldingen/afbeelding-ervaring-01.jpg" 
-            alt="Afbeelding van een scherm met code erop." 
-            title="Afbeelding van een scherm met code erop.">
-            <h2>Prestaties</h2>
-            <p>
-                Mijn eerste prestatie vond plaats in het secundair onderwijs. 
-                Men kreeg de opdracht een functionele webapplicatie te ontwikkelen. 
-                De programmeertalen die daar aan de pas kwamen waren PHP en Javascript. 
-                Daarnaast hield de opgave in dat we een verslag moesten schrijven over het proces. 
-                Mijn applicatie werd voorgesteld als een alternatief voor "Google Forms". 
-                De gebruiker kon zichzelf registreren om enquêtes te maken en in te vullen. 
-                Deze enquêtes werden publiek weergegeven in een filterbare lijst waardoor iedere ingelogde gebruiker ze kon invullen. 
-                Bovendien konden enquêtes privé gezet worden met een wachtwoord. 
-                Gebruikers hadden dus dit wachtwoord nodig om te interacteren.
-            </p>
-            <p>
-                Mijn tweede prestatie is het uitwerken van een groepsproject met een andere student. 
-                Tijdens het eerste jaar in Karel de Grote Hogeschool ontwikkelden wij het spel "Minesweeper" door gebruik te maken van Java. 
-                Bijna elke avond spraken wij af via Discord om samen aan het project te werken. 
-                Dit proces was zeer succesvol, aangezien het eindproduct voldeed aan alle gewenste zaken. 
-                Bovendien zorgde onze methode ervoor dat er geen nood was aan crunching.
-            </p>
-        </section>
-    </main>
+        <div class="grid-container container-fluid">
+            <div class="row">
+                <div class="col-sm col-sm-4">
+                    <img src="../afbeeldingen/afbeelding-ervaring-02.jpg" 
+                    alt="Afbeelding van een scherm met GitHub erop." 
+                    title="Afbeelding van een scherm met GitHub erop."
+                    class="img-ervaring">
+                </div>
+                <div class="col-sm col-sm-8 col-opleidingen col-ervaring">
+                    <h2>Opleidingen</h2>
+                    <p>
+                        Ik ben mijn IT-kennis beginnen te ontwikkelen tijdens mijn opleiding binnen het secundair onderwijs. 
+                        Daar volgde ik de richting "Toegepaste Informatica" voor twee jaar tot ik mijn diploma kreeg. 
+                        Deze richting werd gegeven door de Sint Ursula in Lier.
+                    </p>
+                    <p>
+                        Vervolgens heb ik twee jaar lang de opleiding "Toegepaste Informatica" gevolgd in de hogeschool. 
+                        In Karel de Grote Hogeschool trachtte ik een bachelor te behalen binnen de opleiding applicatieontwikkeling. 
+                        Het eerste jaar was ik geslaagd voor een helft van de vakken. Namelijk, programmeren, hardware, operating systems en databanken. 
+                        Het tweede jaar studeerde ik voor de andere vakken waarvoor ik niet geslaagd was. 
+                        Uiteindelijk waren mijn studiepunten onvoldoende en heb ik mijn diploma niet behaald.
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm col-sm-10 col-prestaties col-ervaring">
+                    <h2>Prestaties</h2>
+                    <p>
+                        Mijn eerste prestatie vond plaats in het secundair onderwijs. 
+                        Men kreeg de opdracht een functionele webapplicatie te ontwikkelen. 
+                        De programmeertalen die daar aan de pas kwamen waren PHP en Javascript. 
+                        Daarnaast hield de opgave in dat we een verslag moesten schrijven over het proces. 
+                        Mijn applicatie werd voorgesteld als een alternatief voor "Google Forms". 
+                        De gebruiker kon zichzelf registreren om enquêtes te maken en in te vullen. 
+                        Deze enquêtes werden publiek weergegeven in een filterbare lijst waardoor iedere ingelogde gebruiker ze kon invullen. 
+                        Bovendien konden enquêtes privé gezet worden met een wachtwoord. 
+                        Gebruikers hadden dus dit wachtwoord nodig om te interacteren.
+                    </p>
+                    <p>
+                        Mijn tweede prestatie is het uitwerken van een groepsproject met een andere student. 
+                        Tijdens het eerste jaar in Karel de Grote Hogeschool ontwikkelden wij het spel "Minesweeper" door gebruik te maken van Java. 
+                        Bijna elke avond spraken wij af via Discord om samen aan het project te werken. 
+                        Dit proces was zeer succesvol, aangezien het eindproduct voldeed aan alle gewenste zaken. 
+                        Bovendien zorgde onze methode ervoor dat er geen nood was aan crunching.
+                    </p>
+                </div>
+                <div class="col-sm col-sm-2">
+                    <img src="../afbeeldingen/afbeelding-ervaring-01.jpg" 
+                    alt="Afbeelding van een scherm met code erop." 
+                    title="Afbeelding van een scherm met code erop."
+                    class="img-ervaring">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-container">
+      <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top footer-container">
+        <div class="col-md-4 d-flex align-items-center ps-5">
+          <span class="mb-3 mb-md-0 text-body-secondary">&copy; Siebe Verhaegen</span>
+        </div>
+    
+        <ul class="nav col-md-4 justify-content-end list-unstyled d-flex pe-5">
+          <li class="ms-3"><a class="text-body-secondary" href="https://www.facebook.com/siebe.verhaegen"><img src="../afbeeldingen/icoon-facebook.png" alt="Facebook link"></svg></a></li>
+          <li class="ms-3"><a class="text-body-secondary" href="https://www.twitter.com/SiebeVerhaegen"><img src="../afbeeldingen/icoon-twitter.png" alt="Twitter link"></svg></a></li>
+          <li class="ms-3"><a class="text-body-secondary" href="mailto:r1002687@student.thomasmore.be"><img src="../afbeeldingen/icoon-email.png" alt="E-mail link"></svg></a></li>
+        </ul>
+      </footer>
+    </div>
 </body>
 </html>

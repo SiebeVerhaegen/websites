@@ -2,9 +2,15 @@
 $studentemail = htmlspecialchars($_POST['studentemail']);
 $onderwerp = htmlspecialchars($_POST['onderwerp']);
 $inhoud = htmlspecialchars($_POST['inhoud']);
-$naam = htmlspecialchars($_POST['naam']);
+$voornaam = htmlspecialchars($_POST['voornaam']);
+$familienaam = htmlspecialchars($_POST['familienaam']);
 $email = htmlspecialchars($_POST['email']);
-$volledigeInhoud = "Naam: {$naam}\nE-mail: {$email}\n\n{$inhoud}";
+$volledigeInhoud = "";
+if (isset($_POST['checkList'])) {
+    $checkList = $_POST['checkList'];
+    $volledigeInhoud += "{$checkList}\n";
+}
+$volledigeInhoud += "Naam: {$voornaam} {$familienaam}\nE-mail: {$email}\n\n{$inhoud}";
 
 $headers[] = 'MIME-Version: 1.0';
 $headers[] = 'Content-type: text/plain; charset=iso-8859-1';
